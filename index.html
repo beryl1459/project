@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>eunbi의 web page</title>
+  <meta name="title" content="고은비의 첫 과제 웹페이지">
+  <meta name="author" content="고은비">
+  <meta name="description" content="과제로 먼저해보는 페이지입니다.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="고은비의 첫 과제 웹페이지">
+  <meta property="og:description" content="과제로 먼저해보는 페이지입니다">
+  <link href="bbi_style.css" rel="stylesheet" type="text/css" >
+ 
+  <!-- css, fonts -->
+ <link type="text/css" rel="stylesheet" href="style.css">
+ <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet" >
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+ <header>
+  <nav class="nav_bar">
+      <div class="nav_logo">
+       <img src="dr.groot_logo.png" alt="메인로고">
+      </div>
+      <ul class="nav_menu">
+        <li>BEST</li>
+        <li>제품라인업</li>
+        <li>이벤트/회원혜택</li>
+        <li>고객센터</li>
+        <li>상품후기</li>
+      </ul>
+  </nav>
+ </header>
+<div class="detail_box">  
+  <div class="left_area">
+    <img id="main_img" src="drgroot_main_img.jpg" width="450"     
+     height="500" alt="닥터그루트 메인이미지입니다." > 
+  </div>
+
+  <div class="right_area">
+  <div class="under_area">
+   <main id="product_name">
+     <h1>닥터그루트 센서티브 두피진정 샴푸</h1>  
+     <h2 class="righ_area_subheading">두피 가려움 이제 안녕 안녕!</h2>
+   </main>  
+  </div>
+   
+  <table>
+    <tbody>
+        <tr>
+          <td>판매가</td>
+          <td>29,000원</td>
+        </tr>
+        <tr> 
+          <td>배송비</td>
+          <td>무료</td>
+        </tr>
+     </tbody>
+   </table>
+   <div class="under_area"></div>
+   <table>
+     <tbody> 
+        <tr> 
+          <td>옵션선택</td>
+          <td> 
+           <article>
+             <select name="option_select" style="width:200px;" id="option_shampoo">
+              <label for="option_shampoo">Choose a menu:</label> 
+              <option value="">-[필수]옵션 선택-</option>
+              <option value="shampoopackge">A.샴푸 패키지 </option>
+              <option value="sham+conditioner">B.샴푸+린스패키지</option>
+             </select>
+           </article>
+          </td>
+        </tr>
+     <tbody>
+    </table>
+    <div class="under_area"></div>
+      <p class="info">(최소주문수량 1개 이상<span class=""> / 최대주문수량 100개 이하</span>)</p>
+ </div>
+</div>
+  
+</body>
