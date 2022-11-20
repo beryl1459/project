@@ -107,10 +107,9 @@ body { font-family: 'Noto Sans KR', sans-serif;
 
 #prdDetail {
     width: 1200px ;
-    position: relative;
     border-bottom: 3px solid #dedede;
     margin: 0 auto;
-    padding: 20px 60px;
+    padding: 10px 60px;
     height: 60px;
 }
 
@@ -122,15 +121,26 @@ body { font-family: 'Noto Sans KR', sans-serif;
 }
 
 .tab_detail_menu li {
-  padding: 20px 20px;
+  padding: 15px 20px;
   background-color: #dedede;
+  border: 1px solid silver;
 }
 
-.txt-manual_tab_detail {
+.tab_detail_start {
     width: 1200px ;
-    position: relative;
+    background-color: #ffffff;
     margin: 0 auto;
-    padding: 60px;
-    height: 500px;
+    padding: 10px 60px;
 }
 
+.detail_image_start {
+    width: 1200px ;
+    margin: 0 auto;
+    padding: 10px 60px;
+    height: 30px;
+}
+
+.detail_image, .detail_write {
+   display: flex;
+   justify-content: center;
+}
