@@ -113,6 +113,26 @@ body { font-family: 'Noto Sans KR', sans-serif;
   font-weight: 1000;
 }
 
+/* 장바구니 담기 */
+.btn_add_cart {
+    width: 50%;
+    border: none;
+    padding: 10px;
+    background: #fecb3e;
+    float:left;
+}
+
+/* 구매하기 */
+.btn_add_order {
+    display: inline-block;
+    width: 50%;
+    border: none;
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+    float:right;
+}  
+
 #prdDetail {
     width: 1200px ;
     border-bottom: 3px solid #dedede;
