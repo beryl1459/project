@@ -22,96 +22,115 @@
   
 </head>
 <body>
-<!-- 자바연결 -->
-<script src="script.js" ></script>  
-<header id="header_nav">
-  <!-- 상단 네비게이션바 -->
- <nav class="nav_bar">
-      <div class="nav_logo">
-       <img src="dr.groot_logo.png" alt="메인로고">
-      </div>
-      <ul class="nav_menu">
-        <li>BEST</li>
-        <li>제품라인업</li>
-        <li>이벤트/회원혜택</li>
-        <li>고객센터</li>
-        <li>상품후기</li>
-      </ul>
-  </nav>
- </header>
-<div class="detail_box_right_left"
-    <!-- 메인 이미지 -->
-      <div class="detail_box">  
-        <div class="left_area">
-          <img id="main_img" src="drgroot_main_img.jpg" width="450"     
-           height="500" alt="닥터그루트 메인이미지입니다." > 
+<div class="header_nav_stick">
+  <header>
+    <!-- 상단 네비게이션바 -->
+   <nav class="nav_bar">
+        <div class="nav_logo">
+         <img src="dr.groot_logo.png" alt="메인로고">
         </div>
-      <!-- 메인이미지 오른쪽 영역 -->
-        <div class="right_area">
-        <div class="under_area">
-         <main id="product_name">
-           <h1>닥터그루트 센서티브 두피진정 샴푸</h1>  
-           <h2 class="righ_area_subheading">두피 가려움 이제 안녕 안녕!</h2>
-         </main>  
+        <ul class="nav_menu">
+          <li>BEST</li>
+          <li>제품라인업</li>
+          <li>이벤트/회원혜택</li>
+          <li>고객센터</li>
+          <li>상품후기</li>
+        </ul>
+    </nav>
+  </header>
+</div> <!-- header_nav_stick -->   
+<main>
+  <div class="detail_box_right_left"
+      <!-- 메인 이미지 -->
+        <div class="detail_box">  
+          <div class="left_area">
+            <img id="main_img" src="drgroot_main_img.jpg" width="450"     
+             height="500" alt="닥터그루트 메인이미지입니다." > 
+          </div>
+        <!-- 메인이미지 오른쪽 영역 -->
+          <div class="right_area">
+          <div class="under_area">
+           <div id="product_name">
+             <h1>닥터그루트 센서티브 두피진정 샴푸</h1>  
+             <h2 class="righ_area_subheading">두피 가려움 이제 안녕 안녕!</h2>
+           </div>  
+          </div>
+        <!-- 메인이미지 오른쪽 영역 아래 -->
+          <table>
+            <tbody>
+                <tr>
+                  <td>판매가</td>
+                  <td>29,000원</td>
+                </tr>
+                <tr> 
+                  <td>배송비</td>
+                  <td>무료</td>
+                </tr>
+             </tbody>
+           </table>
+           <table>
+             <tbody> 
+                <tr> 
+                  <td>옵션선택</td>
+                  <td> 
+                     <select name="option_select" style="width:300px;" id="option_shampoo">
+                      <option value="">-[필수]옵션 선택-</option>
+                      <option value="A.샴푸 패키지">A.샴푸 패키지 </option>
+                      <option value="B.샴푸+린스패키지">B.샴푸+린스패키지</option>
+                     </select>
+                  </td>
+                </tr>
+             </tbody>
+            </table>
+            <div class="under_area"></div>
+            <table>
+             <tbody>  <!-- 작업중 -->
+               <tr>
+                 <td>상품명</td>
+                 <td style="width:300px;">닥터그루트 센서티브 두피진정샴푸</td>
+               </tr>
+               <tr> 
+                  <td>수량</td>
+                  <td> 
+                    <input type="number" min="1" value="1">
+                  </tr>
+             </tbody><!-- 작업중 -->
+            </table>
+            <div class="under_area"></div>
+              <p class="under_area_info">(최소주문수량 1개 이상/ 최대주문수량 100개 이하)</p>  
+             <div id="totalPrice" class="totalPrice">
+                <span class="total_price">TOTAL :</span>  
+                <span class="total_price">29,000원</span>
+             </div>
+</div>
+         </div>
         </div>
-      <!-- 메인이미지 오른쪽 영역 아래 -->
-        <table>
-          <tbody>
-              <tr>
-                <td>판매가</td>
-                <td>29,000원</td>
-              </tr>
-              <tr> 
-                <td>배송비</td>
-                <td>무료</td>
-              </tr>
-           </tbody>
-         </table>
-         <div class="under_area"></div>
-         <table>
-           <tbody> 
-              <tr> 
-                <td>옵션선택</td>
-                <td> 
-                   <select name="option_select" style="width:200px;" id="option_shampoo">
-                    <option value="">-[필수]옵션 선택-</option>
-                    <option value="A.샴푸 패키지">A.샴푸 패키지 </option>
-                    <option value="B.샴푸+린스패키지">B.샴푸+린스패키지</option>
-                   </select>
-                </td>
-              </tr>
-           </tbody>
-          </table>
-          <div class="under_area"></div>
-            <p class="under_area_info">(최소주문수량 1개 이상/ 최대주문수량 100개 이하)</p>   
+  </div> <!-- detail_box_right_left 끝 -->   
+</main>  
+    <div class="txt-manual">
+      <div id="prdDetail" class="tab_detail">
+              <div class="tab_margin"></div>
+              <ul class="tab_detail_menu">
+                  <li>상품상세정보</li>
+                  <li>상품구매안내</li>
+                  <li>관련상품</li>
+                  <li>상품후기</li>
+                  <li>상품Q&amp;A </li>
+              </ul>  
        </div>
-      </div>
-</div> <!-- detail_box_right_left 끝 -->   
-  <div class="txt-manual">
-    <div id="prdDetail" class="tab_detail">
-            <div class="tab_margin"></div>
-            <ul class="tab_detail_menu">
-                <li>상품상세정보</li>
-                <li>상품구매안내</li>
-                <li>관련상품</li>
-                <li>상품후기</li>
-                <li>상품Q&amp;A </li>
-            </ul>  
-     </div>
-  </div> 
-<!--상세이미지 시작-->  
-<div class="tab_detail_start">
-   <div class="detail_image_start"></div>
-      <h3 class="detail_write">두피 진정과 깨끗함을 한 번에 경험하세요!</h3>
-      <div class="detail_image">
-        <img src="00.jpg" alt= "마이크로 바이옴 센서티브20 두피진정앰플샴푸">
-      </div>
-      <div class="detail_image">
-        <img src="01.jpeg" alt= "울긋불긋 가려운 민감두피라면 닥터그루트">
-      </div>
-      <div class="detail_image">
-        <img src="02.jpeg" alt= "울긋불긋 가려운 민감두피라면 닥터그루트">
-      </div>
-  </div> <!--tab_detail_start 끝 -->
-
+    </div> 
+  <!--상세이미지 시작-->  
+  <div class="tab_detail_start">
+     <div class="detail_image_start"></div>
+        <h3 class="detail_write">두피 진정과 깨끗함을 한 번에 경험하세요!</h3>
+        <div class="detail_image">
+          <img src="00.jpg" alt= "마이크로 바이옴 센서티브20 두피진정앰플샴푸">
+        </div>
+        <div class="detail_image">
+          <img src="01.jpeg" alt= "울긋불긋 가려운 민감두피라면 닥터그루트">
+        </div>
+        <div class="detail_image">
+          <img src="02.jpeg" alt= "울긋불긋 가려운 민감두피라면 닥터그루트">
+        </div>
+    </div> <!--tab_detail_start 끝 -->
 </body>

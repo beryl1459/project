@@ -10,10 +10,11 @@ body { font-family: 'Noto Sans KR', sans-serif;
  line-height: 1.3em; 
 }
 
-#header_nav {
-    background-color: ffffff;
-    position: relative;
+
+.header_nav_stick {
+    position:sticky;
     margin: 0 auto;
+    top: 0;
 }
 
   .nav_bar {
@@ -69,10 +70,9 @@ body { font-family: 'Noto Sans KR', sans-serif;
       display: block;
       font-size: 30px;
       font-weight: 400;
-      height: 60px;
+      height: 30px;
       line-height: 30px;
       width: 500px;
-      padding: 0 0px 10px 0px;
     }
     
     .righ_area_subheading{
@@ -96,14 +96,22 @@ body { font-family: 'Noto Sans KR', sans-serif;
         font-weight: normal;
         color: black;
         width: 115px;
-        padding: 25px 0 8px 9px;
+        padding: 10px 0 5px 5px;
         text-align: left;
         vertical-align: middle;
     }
     
     .under_area_info {
-      font-size: 10px;
+      font-size: 13px;
     }
+
+/* 주문 토탈 가격 */
+#totalPrice {
+  text-align : right;
+  padding: 10px 30px 19px;
+  font-size: 20px;
+  font-weight: 1000;
+}
 
 #prdDetail {
     width: 1200px ;
