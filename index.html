@@ -3,137 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <title>eunbi의 web page</title>
-  <meta name="title" content="고은비의 첫 과제 웹페이지">
+  <meta name="title" content="고은비의 첫 과제 웹페이지입니다.">
   <meta name="author" content="고은비">
-  <meta name="description" content="과제로 먼저해보는 페이지입니다.">
+  <meta name="description" content="과제로 만든 페이지입니다.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta property="og:title" content="고은비의 첫 과제 웹페이지">
-  <meta property="og:description" content="과제로 먼저해보는 페이지입니다">
+  <meta property="og:description" content="과제로 만든 페이지입니다">
   <!-- css 연결 -->
-  <link href="bbi_style.css" rel="stylesheet" type="text/css" >
-  
+  <link href="bbi_style.css" rel="stylesheet" type="text/css" >  
   <!-- css, fonts -->
  <link type="text/css" rel="stylesheet" href="style.css">
  <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet" >
  <link rel="preconnect" href="https://fonts.googleapis.com"> 
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
-  
 </head>
 <body>
-<div class="header_nav_stick">
-  <header>
+  <header class="header_nav_stick">
     <!-- 상단 네비게이션바 -->
-   <nav class="nav_bar">
-        <div class="nav_logo">
-         <img src="dr.groot_logo.png" alt="메인로고">
-        </div>
-        <ul class="nav_menu">
-          <li>BEST</li>
-          <li>제품라인업</li>
-          <li>이벤트/회원혜택</li>
-          <li>고객센터</li>
-          <li>상품후기</li>
-        </ul>
-    </nav>
-  </header>
-</div> <!-- header_nav_stick -->   
-<main>
-  <div class="detail_box_right_left"
-      <!-- 메인 이미지 -->
+    <nav class="nav_bar">
+      <div class="nav_logo">
+        <img src="dr.groot_logo.png" alt="메인로고">
+      </div>
+      <ul class="nav_menu">
+        <li>BEST</li>
+        <li>제품라인업</li>
+        <li>이벤트/회원혜택</li>
+        <li>고객센터</li>
+        <li>상품후기</li>
+      </ul>
+     </nav>
+  </header> <!-- header_nav_stick -->   
+  <main>
+    <div class="detail_box_right_left">
+    <!-- 메인 이미지 -->
       <div class="detail_box">  
-          <div class="left_area">
-            <img id="main_img" src="drgroot_main_img.jpg" width="450"     
-             height="500" alt="닥터그루트 메인이미지입니다." > 
-          </div>
-        <!-- 메인이미지 오른쪽 영역 -->
-          <div class="right_area">
+         <div class="left_area">
+            <img id="main_img" src="drgroot_main_img.jpg" width="450" height="500" alt="닥터그루트 메인이미지입니다." > 
+         </div>
+         <!-- 메인이미지 오른쪽 영역 -->
+         <div class="right_area">
             <div class="under_area">
-             <div id="product_name">
-               <h1>닥터그루트 센서티브 두피진정 샴푸</h1>  
-               <h2 class="righ_area_subheading">두피 가려움 이제 안녕 안녕!</h2>
-             </div>  
+               <div id="product_name">
+                 <h1 class="h1_text">닥터그루트 센서티브 두피진정 샴푸</h1>  
+                 <h2 class="righ_area_subheading">두피 가려움, 정수리 냄새 이제 안녕 안녕!</h2>
+               </div>  
             </div>
-          <!-- 메인이미지 오른쪽 영역 아래 -->
+            <!-- 메인이미지 오른쪽 영역 아래 -->
             <table>
-              <tbody>
-                  <tr>
-                    <td>판매가</td>
-                    <td>29,000원</td>
-                  </tr>
-                  <tr> 
-                    <td>배송비</td>
-                    <td>무료</td>
-                  </tr>
-               </tbody>
-             </table>
-             <table>
-               <tbody> 
-                  <tr> 
-                    <td>옵션선택</td>
-                    <td> 
-                       <select name="option_select" style="width:300px;" id="option_shampoo">
-                        <option value="">-[필수]옵션 선택-</option>
-                        <option value="A.샴푸 패키지">A.샴푸 패키지 </option>
-                        <option value="B.샴푸+린스패키지">B.샴푸+린스패키지</option>
-                       </select>
-                    </td>
-                  </tr>
-               </tbody>
-              </table>
-              <div class="under_area"></div>
-              <table>
-               <tbody> 
-                 <tr>
-                   <td>상품명</td>
-                   <td style="width:300px;">닥터그루트 센서티브 두피진정샴푸</td>
-                 </tr>
-                 <tr> 
-                    <td>수량</td>
-                    <td> 
-                      <input type="number" min="1" value="1">
+                <tbody>
+                    <tr>
+                        <td>판매가</td>
+                        <td>29,000원</td>
                     </tr>
-               </tbody>
-              </table>
-              <div class="under_area"></div>
-                <p class="under_area_info">(최소주문수량 1개 이상/ 최대주문수량 100개 이하)</p>  
-               <div id="totalPrice" class="totalPrice">
+                    <tr> 
+                        <td>배송비</td>
+                        <td>무료</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody> 
+                    <tr> 
+                      <td>옵션선택</td>
+                      <td> 
+                          <select name="option_select" style="width:300px;" id="option_shampoo">
+                          <option value="">-[필수]옵션 선택-</option>
+                          <option value="A.샴푸 패키지">A.샴푸 패키지 </option>
+                          <option value="B.샴푸+린스패키지">B.샴푸+린스패키지</option>
+                         </select>
+                      </td>
+                    </tr>
+                 </tbody>
+             </table>
+             <div class="under_area"></div>
+             <table>
+                 <tbody> 
+                    <tr>
+                        <td>상품명</td>
+                        <td style="width:300px;">닥터그루트 센서티브 두피진정샴푸</td>
+                    </tr>
+                    <tr> 
+                         <td>수량</td>
+                         <td> 
+                             <input type="number" min="1" value="1"> 
+                         </td>
+                    </tr>
+                 </tbody>
+             </table>
+             <div class="under_area"></div>
+                 <p class="under_area_info">(최소주문수량 1개 이상/ 최대주문수량 100개 이하)</p>  
+             <div id="totalPrice" class="totalPrice">
                   <span class="total_price">TOTAL :</span>  
                   <span class="total_price">29,000원</span>
-               </div>
-              <!--장바구니버튼 -->
-              <button type="button" class="btn_add_cart">장바구니</button>
-              <button type="button" class="btn_add_order">바로구매</button>
              </div>
-        </div>
+             <!--장바구니버튼, 구매버튼 -->
+             <button type="button" class="btn_add_cart">장바구니</button>
+             <button type="button" class="btn_add_order">바로구매</button>
+         </div>
       </div>
-  </div> <!-- detail_box_right_left 끝 -->   
-</main>  
-    <div class="txt-manual">
-      <div id="prdDetail" class="tab_detail">
-              <div class="tab_margin"></div>
-              <ul class="tab_detail_menu">
+    </div> <!-- detail_box_right_left 끝 -->   
+  </main>  
+  <article class="txt-manual">
+     <div id="prdDetail" class="tab_detail">
+          <div class="tab_margin"></div>
+            <ul class="tab_detail_menu">
                   <li>상품상세정보</li>
                   <li>상품구매안내</li>
                   <li>관련상품</li>
                   <li>상품후기</li>
                   <li>상품Q&amp;A </li>
-              </ul>  
-       </div>
-    </div> 
-  <!--상세이미지 시작-->  
-  <div class="tab_detail_start">
-     <div class="detail_image_start"></div>
-        <h3 class="detail_write">두피 진정과 깨끗함을 한 번에 경험하세요!</h3>
-        <div class="detail_image">
-          <img src="00.jpg" alt= "마이크로 바이옴 센서티브20 두피진정앰플샴푸">
-        </div>
-        <div class="detail_image">
-          <img src="01.jpeg" alt= "울긋불긋 가려운 민감두피라면 닥터그루트">
-        </div>
-        <div class="detail_image">
-          <img src="02.jpeg" alt= "울긋불긋 가려운 민감두피라면 닥터그루트">
-        </div>
-    </div> <!--tab_detail_start 끝 -->
+            </ul>  
+      </div>
+   </article> 
+  <article class="tab_detail_start"> <!--상세 페이지 시작-->  
+    <div class="detail_image_start"></div>
+    <section>    
+      <h3 class="detail_write">두피 진정과 깨끗함을 한 번에 경험하세요!</h3>
+    </section>  
+    <article class="detail_image">
+      <img src="00.jpg" alt= "마이크로 바이옴 센서티브20 두피진정앰플샴푸">
+    </article>
+    <article class="detail_image">
+      <img src="01.jpeg" alt= "울긋불긋 가려운 민감두피라면 닥터그루트">
+    </article>
+    <article class="detail_image">
+      <img src="02.jpeg" alt= "울긋불긋 가려운 민감두피라면 닥터그루트">
+    </article>
+  </article> <!--tab_detail_start 상세 페이지 끝 -->
+  <article class="detail_end"> <!--상세페이지 아래 부분-->
+    <div class="detail_end_sec_start">
+         <div class="detail_end_sec1"> 
+                  <div class="detail_end_sec1_up">
+                     <p>상품결제정보</p>
+                  </div>
+                  <div class="detail_end_sec1_down">
+                     <span>
+                     <p>고액 결제의 경우 안전을 위해 카드사에서 확인 전화를 드릴 수도 있습니다.</p></span>
+                     <span>
+                     <p style="margin-top: 1px;line-height: 1.2">확인 과정에서 도난 카드의 사용이나 타인 명의의 주문 등 정상적인 주문이 아니라고 판단될 경우 임의로 주문을 보류 또는 취소할 수 있습니다.</p></span>
+                  </div>
+         </div>  
+         <div class="detail_end_sec2">
+                  <div class="detail_end_sec2_up">
+                      <span><p>배송정보</p></span>
+                  </div>  
+                  <div class="detail_end_sec2_down">
+                      <span><p>배송 방법 : 택배</p></span>
+                      <span><p>배송 지역 : 전국지역</p></span>
+                      <span><p>배송 비용 : 무료</p></span>
+                      <span><p>배송 기간 : 1일 ~ 5일</p></span>
+                      <span><p>배송 안내 : </p></span>
+                      <span><p>[배송비]</p></span>
+                          <span><p>상품 총 구매대금이 2만원 이상인 경우 전국 어디나 무료로 배송해 드립니다.</p></span>
+                          <span><p>상품 총 구매대금이 2만원 미만인 경우 2,500원의 배송료가 부과됩니다.</p></span>
+                      <span><p>[배송기간]</p></span> 
+                          <span><p>결제 완료 후 영업일 기준 2~5일 이내에 배송 완료 됩니다.</p></span>
+                          <span style="margin-top: 1px;line-height: 1.2; "><p>(금요일 오후/주말/공휴일 결제분은 3~6일 단,지역별/택배업체의 상황에 따라 배송 가능 일이 변경될 수 있습니다.)</p></span>
+                          <span style="margin-top: 1px;line-height: 1.2; "><p>고객님과 전화통화가 되지 않을 경우 배송이 지연될 수도 있습니다. 또한, 주문 상품의 재고 문제로 배송이 지연될 경우 개별적으로 연락을 드리고 있습니다.</p></span>
+                       <span><p>[배송지역]</p></span> 
+                          <span><p>모든 상품을 전국 어디나 배송을 하고 있습니다.</p></span>
+                          <span><p>단, 해외배송은 지원하고 있지 않습니다.</p></span>
+                          <span><p>도서지역의 경우 상품 특성에 따라 서비스 되지 않을 수 있사 오니 이 점 양해바랍니다.</p></span>
+                  </div>
+          </div>
+    </div>
+  </article>
+  <footer>
+    
+  </footer>
 </body>
