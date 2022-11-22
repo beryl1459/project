@@ -2,9 +2,10 @@ body { font-family: 'Noto Sans KR', sans-serif;
 }
 
 .header_nav_stick {
-    position:sticky;
-    margin: 0 auto;
-    top: 0;
+    position: sticky;
+    top: 0px;
+    z-index: 100 !important;
+    border-bottom: 1px solid #d6d6d6;
 }
 
   .nav_bar {
@@ -14,12 +15,15 @@ body { font-family: 'Noto Sans KR', sans-serif;
     background-color: white;
     width: 1200px;
     margin: 0 auto;
-    padding: 10px 60px;}
+    padding: 10px 60px;
+  }
   
   .nav_menu {
+    background-color: white;
     display: flex;
     list-style: none;
-    padding-left: 0;}
+    padding-left: 0;
+  }
   
   .nav_menu li {
     padding: 8px 20px;}
@@ -33,24 +37,24 @@ body { font-family: 'Noto Sans KR', sans-serif;
 }
 
 .detail_box_right_left {
-    background-color:  #e6e6e6;
+    background-color:  #d6d6d6;
     margin: 0 auto;
 }
     .detail_box {
         background-color: #ffffff;
-        width: 1200px ;
-        border: 1px solid #dedede;
+        width: 1200px;
+        border: 1px solid #d6d6d6;
         margin: 0 auto;
         padding: 60px;
         height: 500px;
     }
     
     .left_area {
-      float:left;
+      float: left;
     }
     
     .right_area {
-      float:right;
+      float: right;
     }
     
     .product_name {
@@ -111,7 +115,7 @@ body { font-family: 'Noto Sans KR', sans-serif;
     padding: 18px;
     background: #fecb3e;
     color: black;
-    float:left;
+    float: left;
 }
 
 /* 구매하기 */
@@ -168,7 +172,7 @@ body { font-family: 'Noto Sans KR', sans-serif;
 
 /* 상세페이지 아래부분 */
 .detail_end_sec_start {
-   background-color:  #ededed;
+   background-color:  #f6f7f7;
    width: 1200px ;
    margin: 0 auto;
    height: 500px;
@@ -186,7 +190,6 @@ body { font-family: 'Noto Sans KR', sans-serif;
   float:right;
   margin: 0px 50px 0px 0px;
   width: 500px;
-  min-height: 1200px;
   height: 500px;
 }
 
@@ -201,4 +204,56 @@ body { font-family: 'Noto Sans KR', sans-serif;
     color: black;
     font-size: 12px;
     line-height: 10px;
+}
+
+/* footer 입니다 */
+.detail_footer_start{
+  background-color:  #ffffff;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#footer_wrap {
+    background-color:  #d6d6d6;
+    margin: 0 auto;
+    height: 150px;
+}
+.footer_info {
+  display: flex;
+}
+
+.footer_info_top_btn {
+   width: 1200px ;
+   padding: 10px 10px;
+   margin: 0 auto;
+}
+
+.footer_info_start dt {
+  float: left;
+  margin: 0px;
+}
+
+.footer_info_start {
+  flex: 2;
+  width: 500px;  
+  margin: 0px;
+}
+
+.footer_info_center {
+  flex: 1;
+  width: 200px;
+  text-align: center;
+}
+
+.footer_info_end {
+  flex: 2;
+  width: 500px;
+  text-align: right;
+  line-height: 50px;  
+}
+
+#top_btn {
+	position: fixed; 	
+  bottom: 100px; 		
+  right: calc(25% - 300px);
 }
