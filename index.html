@@ -86,7 +86,15 @@
                     <tr> 
                          <td>수량</td>
                          <td> 
-                             <input type="number" min="1" value="1"> 
+                             <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">
+                                    <img src="minus.png" width="10" height="10" alt="">
+                                </button>
+                                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+                                    <img src="plus.png" width="10" height="10" alt="">
+                                </button>
+                             </div> 
                          </td>
                     </tr>
                  </tbody>
