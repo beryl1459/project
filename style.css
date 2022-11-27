@@ -170,6 +170,51 @@ body { font-family: 'Noto Sans KR', sans-serif;
    justify-content: center;
 }
 
+/* 플러스 마이너스 시작 */
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  border: 1px solid #ddd;
+  display: inline-flex;
+}
+
+.number-input, .number-input * {
+  box-sizing: border-box;
+}
+
+.number-input button {
+  outline:none;
+  -webkit-appearance: none;
+  border: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  padding: 2px;
+  margin: 0;
+  position: relative;
+  background: white;
+}
+
+.number-input input[type=number] {
+  max-width: 30px;
+  border: solid #ddd;
+  border-width: 0 2px;
+  font-size:10px;
+  height: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+/* 플러스,마이너스 버튼 종료 */
+
 /* 상세페이지 아래부분 */
 .detail_end_sec_start {
    background-color:  #f6f7f7;
@@ -257,48 +302,3 @@ body { font-family: 'Noto Sans KR', sans-serif;
   bottom: 100px; 		
   right: calc(25% - 300px);
 }
-
-/* 붙여넣기 시작 */
-input[type="number"] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-
-.number-input {
-  border: 1px solid #ddd;
-  display: inline-flex;
-}
-
-.number-input, .number-input * {
-  box-sizing: border-box;
-}
-
-.number-input button {
-  outline:none;
-  -webkit-appearance: none;
-  border: none;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  padding: 2px;
-  margin: 0;
-  position: relative;
-  background: white;
-}
-
-.number-input input[type=number] {
-  max-width: 30px;
-  border: solid #ddd;
-  border-width: 0 2px;
-  font-size:10px;
-  height: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-/* 종료 */
